@@ -116,3 +116,4 @@
   1. 对个人使用者和小型企业（少于 250 名员工且年收入低于 1,000 万美元）免费。
   2. 对于大型企业，需要付费订阅 **Docker Pro/Team/Business** 计划，费用根据订阅类型和用户数量而定。
 * 更多详情请参考官方定价页面：[https://www.docker.com/pricing](https://www.docker.com/pricing)
+notepad C:\Projects\python-docker\Dockerfile
