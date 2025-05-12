@@ -117,3 +117,18 @@
   2. 对于大型企业，需要付费订阅 **Docker Pro/Team/Business** 计划，费用根据订阅类型和用户数量而定。
 * 更多详情请参考官方定价页面：[https://www.docker.com/pricing](https://www.docker.com/pricing)
 notepad C:\Projects\python-docker\Dockerfile
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello from Docker in LAN!"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
+cd C:\Projects\python-docker
+docker build -t python-hello .
+
+docker run -d -p 5000:5000 --name python-web python-hello
